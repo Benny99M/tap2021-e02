@@ -6,11 +6,13 @@ namespace ADIBAS
 {
     class Sample
     {
-        Guid Id;
-        string DnaSequence;
-        DateTime AnalysisTime;
-        protected Sample(Guid Id, string DnaSequence, DateTime AnalysisTime) : this(Id, DnaSequence, AnalysisTime)
+     
+
+       public Sample(Guid id, string DNA, DateTime Date)
         {
+            Id = id;
+            DnaSequence = DNA;
+            AnalysisTime = Date;
 
         }
         public Guid Id { get; private set; }

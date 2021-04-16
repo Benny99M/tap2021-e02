@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using System;
 
 namespace IsValidDnaSequence
 {
@@ -10,9 +11,24 @@ namespace IsValidDnaSequence
         }
 
         [Test]
-        public void Test1()
+        public static bool IsvalidDna()
         {
-            Assert.Pass();
+
+ 
+            var RandomDna = "AGCETAS";            
+                string ShouldContain = "ACGT";
+                foreach (char c in RandomDna)
+                {
+                    if (ShouldContain.Contains(c) == false)
+                    {
+                    return false;
+
+                    }
+                }
+            if (RandomDna.Length > 999)
+                return false;
+           return true;
+        }
+        
         }
     }
-}
