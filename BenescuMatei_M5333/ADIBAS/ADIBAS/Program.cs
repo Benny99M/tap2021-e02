@@ -6,7 +6,10 @@ namespace ADIBAS
     {
         static void Main(string[] args)
         {
-            Sample random= new Sample()
+            DateTime time = DateTime.Now;
+            Guid Id = Guid.NewGuid();
+            Sample sample = new Sample(Id, "ABCD", time);
+           
         }
     }
 }
