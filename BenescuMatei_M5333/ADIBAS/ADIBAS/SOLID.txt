@@ -1,0 +1,12 @@
+﻿SOLID:
+S: Single responsibility principle
+O: Open/Closed principle
+L: Linkov substraction principle
+I: Interface Segregation principle
+D: Dependency Inversion Principle
+
+S: Fiecare modul/metoda trebuie sa aiba un singur scop in privirea functionalitatii.
+O: Partile componente trebuie sa fie modulare, adica usor de extins si greu de modificat
+L: Obiectele trebuie sa fie substituibile de catre instante, fara ca substitutiile sa afecteze corectitudinea sistemului
+I: Interfetele trebuie sa fie mici si specifice contextului de utilizare
+D: Modelele trebuie sa fie abstracte, adica nu trebuie sa implementeze situatii concrete.
